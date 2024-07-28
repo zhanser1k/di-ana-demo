@@ -11,7 +11,7 @@
           </h1>
           <form class="space-y-4 md:space-y-6" @submit.prevent="signIn">
             <div>
-              <label for="login" class="block mb-2 text-sm font-medium text-gray-900">Логин</label>
+              <label for="login" class="block mb-2 text-sm font-medium text-gray-900">Логин <span class="bg-blue-100 ml-3 border border-blue-300 rounded-lg p-1">curator | ncagip</span></label>
               <input v-model="login" type="text" name="login" id="login" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="Логин" required="">
             </div>
             <div>
