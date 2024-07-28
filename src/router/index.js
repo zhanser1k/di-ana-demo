@@ -8,7 +8,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'root',
-      redirect: HomeView
+      redirect: '/auth/sign_in'
     },
     {
       path: '/home',
