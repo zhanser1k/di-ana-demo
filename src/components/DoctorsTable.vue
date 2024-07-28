@@ -11,7 +11,7 @@
     </thead>
     <tbody>
     <tr class="border-b dark:border-gray-700" v-for="item in filteredDataByAccount" :key="item.doctor">
-      <td class="px-4 py-3">{{ item.curator }}</td>
+      <td class="px-4 py-3">{{ item.region }}</td>
       <td class="px-4 py-3">{{ item.clinic }}</td>
       <td class="px-4 py-3">{{ item.doctor }}</td>
       <td class="px-4 py-3">
