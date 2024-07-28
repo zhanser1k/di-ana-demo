@@ -27,7 +27,7 @@
                     'bg-yellow-600': item.averageEfficiency.toFixed(2) < 60 && item.averageEfficiency.toFixed(2) > 30,
                     'bg-red-600': item.averageEfficiency.toFixed(2) < 30
                   }"
-            class="bg-green-600 h-1.5 rounded-full"
+            class="h-1.5 rounded-full"
             :style="`width: ${item.averageEfficiency.toFixed(2)}%`"
           ></div>
         </div>
