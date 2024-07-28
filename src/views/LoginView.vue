@@ -11,7 +11,8 @@
           </h1>
           <form class="space-y-4 md:space-y-6" @submit.prevent="signIn">
             <div>
-              <label for="login" class="block mb-2 text-sm font-medium text-gray-900">Логин <span class="bg-blue-100 ml-3 border border-blue-300 rounded-lg p-1">curator | ncagip</span></label>
+              <label for="login" class="block mb-2 text-sm font-medium text-gray-900">Логин</label>
+              <div class="bg-blue-100 my-2 border border-blue-300 rounded-lg p-1">ncagip | curator_1 | curator_2 | curator_3 | curator_4</div>
               <input v-model="login" type="text" name="login" id="login" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="Логин" required="">
             </div>
             <div>
@@ -34,15 +35,11 @@ const login = ref('')
 const password = ref('')
 const router = useRouter()
 
+const logins = ['curator_1', 'curator_2', 'curator_3', 'curator_4', 'ncagip']
+
 const signIn = () => {
-  if (login.value === 'curator' && password.value === '123123') {
-    localStorage.setItem('loggedIn', 'curator')
-    goToHome()
-  } else if (login.value === 'doctor' && password.value === '123123') {
-    localStorage.setItem('loggedIn', 'doctor')
-    goToHome()
-  } else if (login.value === 'ncagip' && password.value === '123123') {
-    localStorage.setItem('loggedIn', 'ncagip')
+  if (logins.includes(login.value) && password.value === '123123') {
+    localStorage.setItem('loggedIn', login.value)
     goToHome()
   } else {
     alert('Неверный логин или пароль')

@@ -10,8 +10,8 @@
     </tr>
     </thead>
     <tbody>
-    <tr class="border-b dark:border-gray-700" v-for="item in averageEfficiencyByDoctor" :key="item.doctor">
-      <td class="px-4 py-3">{{ item.region }}</td>
+    <tr class="border-b dark:border-gray-700" v-for="item in filteredDataByAccount" :key="item.doctor">
+      <td class="px-4 py-3">{{ item.curator }}</td>
       <td class="px-4 py-3">{{ item.clinic }}</td>
       <td class="px-4 py-3">{{ item.doctor }}</td>
       <td class="px-4 py-3">
@@ -27,25 +27,36 @@
                     'bg-yellow-600': item.averageEfficiency.toFixed(2) < 60 && item.averageEfficiency.toFixed(2) > 30,
                     'bg-red-600': item.averageEfficiency.toFixed(2) < 30
                   }"
-            class="bg-primary-600 h-1.5 rounded-full"
+            class="bg-green-600 h-1.5 rounded-full"
             :style="`width: ${item.averageEfficiency.toFixed(2)}%`"
           ></div>
         </div>
       </td>
-      <td class="px-4 py-3"><span class="rounded-full w-4 h-4 bg-yellow-600 block mx-auto"></span></td>
+      <td class="px-4 py-3">
+        <span v-if="item.averageActivity <= 3" class="rounded-full w-4 h-4 bg-green-600 block mx-auto"></span>
+        <span v-if="item.averageActivity > 3 && item.averageActivity <= 5" class="rounded-full w-4 h-4 bg-yellow-600 block mx-auto"></span>
+        <span v-if="item.averageActivity > 5" class="rounded-full w-4 h-4 bg-red-600 block mx-auto"></span>
+      </td>
     </tr>
     </tbody>
   </table>
 </template>
 
 <script setup>
-import { useSalesFilter } from '../composables/useSalesFilter';
+import { useSalesFilter } from '../composables/useSalesFilter'
+import { computed } from 'vue'
+import { curatorsDict } from '@/fake-backend/curators.js';
 
 const props = defineProps({
-  sales: Array
+  sales: Array,
+  account: String
 })
 
 const {
   averageEfficiencyByDoctor
-} = useSalesFilter(props.sales);
+} = useSalesFilter(props.sales)
+
+const filteredDataByAccount = computed(() => {
+  return averageEfficiencyByDoctor.value.filter((e) => e.curator === curatorsDict[props.account])
+})
 </script>

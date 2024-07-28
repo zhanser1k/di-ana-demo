@@ -32,7 +32,11 @@
           ></div>
         </div>
       </td>
-      <td class="px-4 py-3"><span class="rounded-full w-4 h-4 bg-yellow-600 block mx-auto"></span></td>
+      <td class="px-4 py-3">
+        <span v-if="item.averageActivity <= 3" class="rounded-full w-4 h-4 bg-green-600 block mx-auto"></span>
+        <span v-if="item.averageActivity > 3 && item.averageActivity <= 5" class="rounded-full w-4 h-4 bg-yellow-600 block mx-auto"></span>
+        <span v-if="item.averageActivity > 5" class="rounded-full w-4 h-4 bg-red-600 block mx-auto"></span>
+      </td>
     </tr>
     </tbody>
   </table>

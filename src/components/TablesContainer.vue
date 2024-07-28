@@ -94,8 +94,8 @@
 <!--        </div>-->
 <!--      </div>-->
 <!--      <AllSalesTable :sales="sales" />-->
-      <CuratorsTable v-if="props.role === 'ncagip'" :sales="sales" />
-      <DoctorsTable v-if="props.role === 'curator'"  :sales="sales" />
+      <CuratorsTable v-if="props.role === 'ncagip'" :sales="sales" :account="role" />
+      <DoctorsTable v-else  :sales="sales" :account="role" />
     </div>
   </section>
 </template>

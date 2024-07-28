@@ -6,7 +6,8 @@
       "clinic": "Роддом №1",
       "doctor": "Айдарбекова Айгуль",
       "patient": "Жанна Ахметова",
-      "efficiency": 100
+      "efficiency": 100,
+      "activity": 1
     },
     {
       "curator": "Айбек Нуржан",
@@ -14,7 +15,8 @@
       "clinic": "Роддом №1",
       "doctor": "Айдарбекова Айгуль",
       "patient": "Салтанат Кулжанова",
-      "efficiency": 100
+      "efficiency": 100,
+      "activity": 1
     },
     {
       "curator": "Айбек Нуржан",
@@ -22,7 +24,8 @@
       "clinic": "Роддом №1",
       "doctor": "Айдарбекова Айгуль",
       "patient": "Айгуль Тастанова",
-      "efficiency": 38
+      "efficiency": 38,
+      "activity": 5
     },
     {
       "curator": "Айбек Нуржан",
@@ -30,7 +33,8 @@
       "clinic": "Роддом №1",
       "doctor": "Айдарбекова Айгуль",
       "patient": "Гульмира Бекенова",
-      "efficiency": 52
+      "efficiency": 52,
+      "activity": 8
     },
     {
       "curator": "Айбек Нуржан",
@@ -38,7 +42,8 @@
       "clinic": "Роддом №1",
       "doctor": "Айдарбекова Айгуль",
       "patient": "Мадина Сарсенова",
-      "efficiency": 45
+      "efficiency": 45,
+      "activity": 3
     },
     {
       "curator": "Айбек Нуржан",
@@ -46,7 +51,8 @@
       "clinic": "Роддом №1",
       "doctor": "Турсынов Даурен",
       "patient": "Аида Турсунова",
-      "efficiency": 37
+      "efficiency": 37,
+      "activity": 7
     },
     {
       "curator": "Айбек Нуржан",
@@ -54,7 +60,8 @@
       "clinic": "Роддом №1",
       "doctor": "Турсынов Даурен",
       "patient": "Жанель Мусина",
-      "efficiency": 29
+      "efficiency": 29,
+      "activity": 1
     },
     {
       "curator": "Айбек Нуржан",
@@ -62,7 +69,8 @@
       "clinic": "Роддом №1",
       "doctor": "Турсынов Даурен",
       "patient": "Камила Искакова",
-      "efficiency": 18
+      "efficiency": 18,
+      "activity": 5
     },
     {
       "curator": "Айбек Нуржан",
@@ -70,7 +78,8 @@
       "clinic": "Роддом №1",
       "doctor": "Турсынов Даурен",
       "patient": "Назым Есенова",
-      "efficiency": 41
+      "efficiency": 41,
+      "activity": 5
     },
     {
       "curator": "Айбек Нуржан",
@@ -78,7 +87,8 @@
       "clinic": "Роддом №1",
       "doctor": "Турсынов Даурен",
       "patient": "Гульнар Нуржанова",
-      "efficiency": 43
+      "efficiency": 43,
+      "activity": 5
     },
     {
       "curator": "Асель Ерлан",
@@ -86,7 +96,8 @@
       "clinic": "Роддом №2",
       "doctor": "Нурсеитов Арман",
       "patient": "Асем Жумадилова",
-      "efficiency": 68
+      "efficiency": 68,
+      "activity": 1
     },
     {
       "curator": "Асель Ерлан",
@@ -94,7 +105,8 @@
       "clinic": "Роддом №2",
       "doctor": "Нурсеитов Арман",
       "patient": "Меруерт Сарсенова",
-      "efficiency": 65
+      "efficiency": 65,
+      "activity": 5
     },
     {
       "curator": "Асель Ерлан",
@@ -102,7 +114,8 @@
       "clinic": "Роддом №2",
       "doctor": "Нурсеитов Арман",
       "patient": "Бахытгуль Адилова",
-      "efficiency": 62
+      "efficiency": 62,
+      "activity": 7
     },
     {
       "curator": "Асель Ерлан",
@@ -110,7 +123,8 @@
       "clinic": "Роддом №2",
       "doctor": "Нурсеитов Арман",
       "patient": "Гульбану Мусаева",
-      "efficiency": 70
+      "efficiency": 70,
+      "activity": 2
     },
     {
       "curator": "Асель Ерлан",
@@ -118,7 +132,8 @@
       "clinic": "Роддом №2",
       "doctor": "Нурсеитов Арман",
       "patient": "Жулдыз Сарсенова",
-      "efficiency": 67
+      "efficiency": 67,
+      "activity": 4
     },
     {
       "curator": "Асель Ерлан",
@@ -126,7 +141,8 @@
       "clinic": "Роддом №2",
       "doctor": "Кабдуллина Сауле",
       "patient": "Айгуль Кулжанова",
-      "efficiency": 53
+      "efficiency": 53,
+      "activity": 4
     },
     {
       "curator": "Асель Ерлан",
@@ -134,7 +150,8 @@
       "clinic": "Роддом №2",
       "doctor": "Кабдуллина Сауле",
       "patient": "Жансая Жумадилова",
-      "efficiency": 51
+      "efficiency": 51,
+      "activity": 4
     },
     {
       "curator": "Асель Ерлан",
@@ -142,7 +159,8 @@
       "clinic": "Роддом №2",
       "doctor": "Кабдуллина Сауле",
       "patient": "Салтанат Сарсенова",
-      "efficiency": 49
+      "efficiency": 49,
+      "activity": 2
     },
     {
       "curator": "Асель Ерлан",
@@ -150,7 +168,8 @@
       "clinic": "Роддом №2",
       "doctor": "Кабдуллина Сауле",
       "patient": "Альбина Сагадиева",
-      "efficiency": 50
+      "efficiency": 50,
+      "activity": 6
     },
     {
       "curator": "Асель Ерлан",
@@ -158,7 +177,8 @@
       "clinic": "Роддом №2",
       "doctor": "Кабдуллина Сауле",
       "patient": "Гульзира Куанышбаева",
-      "efficiency": 55
+      "efficiency": 55,
+      "activity": 6
     },
     {
       "curator": "Дана Ермек",
@@ -166,7 +186,8 @@
       "clinic": "Роддом №3",
       "doctor": "Бекмуханбетова Алтынай",
       "patient": "Айгерим Искакова",
-      "efficiency": 36
+      "efficiency": 36,
+      "activity": 5
     },
     {
       "curator": "Дана Ермек",
@@ -174,7 +195,8 @@
       "clinic": "Роддом №3",
       "doctor": "Бекмуханбетова Алтынай",
       "patient": "Айгуль Каримова",
-      "efficiency": 38
+      "efficiency": 38,
+      "activity": 3
     },
     {
       "curator": "Дана Ермек",
@@ -182,7 +204,8 @@
       "clinic": "Роддом №3",
       "doctor": "Бекмуханбетова Алтынай",
       "patient": "Меруерт Нуржанова",
-      "efficiency": 37
+      "efficiency": 37,
+      "activity": 3
     },
     {
       "curator": "Дана Ермек",
@@ -190,7 +213,8 @@
       "clinic": "Роддом №3",
       "doctor": "Бекмуханбетова Алтынай",
       "patient": "Алтынай Каиржанова",
-      "efficiency": 40
+      "efficiency": 40,
+      "activity": 5
     },
     {
       "curator": "Дана Ермек",
@@ -198,7 +222,8 @@
       "clinic": "Роддом №3",
       "doctor": "Бекмуханбетова Алтынай",
       "patient": "Гулжан Мухамеджанова",
-      "efficiency": 35
+      "efficiency": 35,
+      "activity": 1
     },
     {
       "curator": "Дана Ермек",
@@ -206,7 +231,8 @@
       "clinic": "Роддом №3",
       "doctor": "Исмаилова Жанель",
       "patient": "Айнагуль Ахметова",
-      "efficiency": 47
+      "efficiency": 47,
+      "activity": 6
     },
     {
       "curator": "Дана Ермек",
@@ -214,7 +240,8 @@
       "clinic": "Роддом №3",
       "doctor": "Исмаилова Жанель",
       "patient": "Гульнар Бекенова",
-      "efficiency": 50
+      "efficiency": 50,
+      "activity": 1
     },
     {
       "curator": "Дана Ермек",
@@ -222,7 +249,8 @@
       "clinic": "Роддом №3",
       "doctor": "Исмаилова Жанель",
       "patient": "Маржан Жумадилова",
-      "efficiency": 45
+      "efficiency": 45,
+      "activity": 6
     },
     {
       "curator": "Дана Ермек",
@@ -230,7 +258,8 @@
       "clinic": "Роддом №3",
       "doctor": "Исмаилова Жанель",
       "patient": "Айгуль Сарсенова",
-      "efficiency": 48
+      "efficiency": 48,
+      "activity": 3
     },
     {
       "curator": "Дана Ермек",
@@ -238,7 +267,8 @@
       "clinic": "Роддом №3",
       "doctor": "Исмаилова Жанель",
       "patient": "Сауле Нуржанова",
-      "efficiency": 46
+      "efficiency": 46,
+      "activity": 7
     },
     {
       "curator": "Ерболат Айдос",
@@ -246,7 +276,8 @@
       "clinic": "Роддом №4",
       "doctor": "Султанов Жанибек",
       "patient": "Айгуль Омарова",
-      "efficiency": 52
+      "efficiency": 52,
+      "activity": 1
     },
     {
       "curator": "Ерболат Айдос",
@@ -254,7 +285,8 @@
       "clinic": "Роддом №4",
       "doctor": "Султанов Жанибек",
       "patient": "Жанель Искакова",
-      "efficiency": 49
+      "efficiency": 49,
+      "activity": 3
     },
     {
       "curator": "Ерболат Айдос",
@@ -262,7 +294,8 @@
       "clinic": "Роддом №4",
       "doctor": "Султанов Жанибек",
       "patient": "Меруерт Каримова",
-      "efficiency": 51
+      "efficiency": 51,
+      "activity": 3
     },
     {
       "curator": "Ерболат Айдос",
@@ -270,7 +303,8 @@
       "clinic": "Роддом №4",
       "doctor": "Султанов Жанибек",
       "patient": "Гульмира Каиржанова",
-      "efficiency": 50
+      "efficiency": 50,
+      "activity": 3
     },
     {
       "curator": "Ерболат Айдос",
@@ -278,7 +312,8 @@
       "clinic": "Роддом №4",
       "doctor": "Султанов Жанибек",
       "patient": "Жулдыз Нуржанова",
-      "efficiency": 53
+      "efficiency": 53,
+      "activity": 1
     }
   ]
 }

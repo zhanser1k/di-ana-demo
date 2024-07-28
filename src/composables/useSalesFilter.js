@@ -44,17 +44,22 @@ export function useSalesFilter(sales) {
           totalEfficiency: 0,
           count: 0,
           region: sale.region,
-          clinic: sale.clinic
+          clinic: sale.clinic,
+          totalActivity: 0,
+          curator: sale.curator
         }
       }
       doctorEfficiency[sale.doctor].totalEfficiency += sale.efficiency
+      doctorEfficiency[sale.doctor].totalActivity += sale.activity
       doctorEfficiency[sale.doctor].count += 1
     })
     return Object.keys(doctorEfficiency).map((doctor) => ({
+      curator: doctorEfficiency[doctor].curator,
       doctor,
       region: doctorEfficiency[doctor].region,
       clinic: doctorEfficiency[doctor].clinic,
-      averageEfficiency: doctorEfficiency[doctor].totalEfficiency / doctorEfficiency[doctor].count
+      averageEfficiency: doctorEfficiency[doctor].totalEfficiency / doctorEfficiency[doctor].count,
+      averageActivity: Math.ceil(doctorEfficiency[doctor].totalActivity / doctorEfficiency[doctor].count)
     }))
   })
 
@@ -62,9 +67,10 @@ export function useSalesFilter(sales) {
     const curatorEfficiency = {}
     filteredSales.value.forEach((sale) => {
       if (!curatorEfficiency[sale.curator]) {
-        curatorEfficiency[sale.curator] = { totalEfficiency: 0, count: 0, region: sale.region }
+        curatorEfficiency[sale.curator] = { totalEfficiency: 0, count: 0, region: sale.region, totalActivity: 0 }
       }
       curatorEfficiency[sale.curator].totalEfficiency += sale.efficiency
+      curatorEfficiency[sale.curator].totalActivity += sale.activity
       curatorEfficiency[sale.curator].count += 1
     })
     return Object.keys(curatorEfficiency).map((curator) => ({
@@ -72,7 +78,8 @@ export function useSalesFilter(sales) {
       region: curatorEfficiency[curator].region,
       salesCount: curatorEfficiency[curator].count,
       averageEfficiency:
-        curatorEfficiency[curator].totalEfficiency / curatorEfficiency[curator].count
+        curatorEfficiency[curator].totalEfficiency / curatorEfficiency[curator].count,
+      averageActivity: Math.ceil(curatorEfficiency[curator].totalActivity / curatorEfficiency[curator].count)
     }))
   })
 
