@@ -4,6 +4,12 @@
       <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900">
         Di-Ana.kz
       </a>
+      <div class="bg-blue-100 my-2 border border-blue-300 rounded-lg p-4 space-y-4 md:space-y-4 sm:p-2">
+        <p>логины: ncagip | curator_1 | curator_2 | curator_3 | curator_4</p>
+        <p>
+          пароль: 123123
+        </p>
+      </div>
       <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0">
         <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
           <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
@@ -12,7 +18,6 @@
           <form class="space-y-4 md:space-y-6" @submit.prevent="signIn">
             <div>
               <label for="login" class="block mb-2 text-sm font-medium text-gray-900">Логин</label>
-              <div class="bg-blue-100 my-2 border border-blue-300 rounded-lg p-1">ncagip | curator_1 | curator_2 | curator_3 | curator_4</div>
               <input v-model="login" type="text" name="login" id="login" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="Логин" required="">
             </div>
             <div>
