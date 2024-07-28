@@ -1,15 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LoginView from '../views/LoginView.vue';
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(),
   routes: [
-    {
-      path: '/',
-      name: 'root',
-      redirect: '/auth/sign_in'
-    },
     {
       path: '/home',
       name: 'home',
@@ -22,5 +17,23 @@ const router = createRouter({
     }
   ]
 })
+router.beforeEach((to, from, next) => {
+  const isLoggedIn = localStorage.getItem('isLoggedIn');
+
+  if (isLoggedIn) {
+    if (to.path === '/auth/sign_in') {
+      next({ path: '/' });
+    } else {
+      next();
+    }
+  } else {
+    if (to.path !== '/auth/sign_in') {
+      next({ path: '/auth/sign_in' });
+    } else {
+      next();
+    }
+  }
+});
+
 
 export default router
