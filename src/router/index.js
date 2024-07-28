@@ -18,7 +18,7 @@ const router = createRouter({
   ]
 })
 router.beforeEach((to, from, next) => {
-  const isLoggedIn = localStorage.getItem('isLoggedIn');
+  const isLoggedIn = localStorage.getItem('loggedIn');
 
   if (isLoggedIn) {
     if (to.path === '/auth/sign_in') {
