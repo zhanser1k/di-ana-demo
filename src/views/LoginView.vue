@@ -5,7 +5,7 @@
         Di-Ana.kz
       </a>
       <div class="bg-blue-100 my-2 border border-blue-300 rounded-lg p-4 space-y-4 md:space-y-4 sm:p-2">
-        <p>логины: ncagip | curator_1 | curator_2 | curator_3 | curator_4</p>
+        <p>логины: ncagip</p>
         <p>
           пароль: 123123
         </p>

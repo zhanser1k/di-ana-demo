@@ -1,0 +1,145 @@
+{
+    "items": [
+        {
+            "city": "Астана",
+            "clinic": "клинника 1",
+            "count": 298,
+            "progress": "63",
+            "coef": "59,60"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 2",
+            "count": 53,
+            "progress": "79",
+            "coef": "10,60"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 3",
+            "count": 278,
+            "progress": "23",
+            "coef": "55,60"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 4",
+            "count": 185,
+            "progress": "37",
+            "coef": "37,00"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 5",
+            "count": 62,
+            "progress": "68",
+            "coef": "12,40"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 6",
+            "count": 145,
+            "progress": "46",
+            "coef": "29,00"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 7",
+            "count": 299,
+            "progress": "54",
+            "coef": "59,80"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 8",
+            "count": 260,
+            "progress": "22",
+            "coef": "52,00"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 9",
+            "count": 90,
+            "progress": "28",
+            "coef": "18,00"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 10",
+            "count": 111,
+            "progress": "72",
+            "coef": "22,20"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 11",
+            "count": 249,
+            "progress": "80",
+            "coef": "49,80"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 12",
+            "count": 173,
+            "progress": "64",
+            "coef": "34,60"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 13",
+            "count": 58,
+            "progress": "30",
+            "coef": "11,60"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 14",
+            "count": 295,
+            "progress": "77",
+            "coef": "59,00"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 15",
+            "count": 59,
+            "progress": "49",
+            "coef": "11,80"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 16",
+            "count": 150,
+            "progress": "35",
+            "coef": "30,00"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 17",
+            "count": 215,
+            "progress": "71",
+            "coef": "43,00"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 18",
+            "count": 287,
+            "progress": "51",
+            "coef": "57,40"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 19",
+            "count": 73,
+            "progress": "24",
+            "coef": "14,60"
+        },
+        {
+            "city": "Астана",
+            "clinic": "клинника 20",
+            "count": 100,
+            "progress": "66",
+            "coef": "20,00"
+        }
+    ]
+
+}

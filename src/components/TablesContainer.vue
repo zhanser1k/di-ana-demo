@@ -93,56 +93,20 @@
 <!--          </AutocompleteInput>-->
 <!--        </div>-->
 <!--      </div>-->
-<!--      <AllSalesTable :sales="sales" />-->
-      <CuratorsTable v-if="props.role === 'ncagip'" :sales="sales" :account="role" />
-      <DoctorsTable v-else  :sales="sales" :account="role" />
+<AllSalesTable v-if="props.role === 'ncagip'" :stats="stats" />
     </div>
   </section>
 </template>
 
 <script setup>
-import AutocompleteInput from '@/components/AutocompleteInput.vue'
-import salesJSON from '../fake-backend/sales.json'
-import { ref, computed } from 'vue'
-import { useSalesFilter } from '@/composables/useSalesFilter.js'
-// import AllSalesTable from '@/components/AllSalesTable.vue'
-import CuratorsTable from '@/components/CuratorsTable.vue'
-import DoctorsTable from '@/components/DoctorsTable.vue';
+import statsJson from '../fake-backend/clinic_statistics.json'
+import { ref } from 'vue'
+import AllSalesTable from '@/components/AllSalesTable.vue'
 
-const sales = ref(salesJSON.sales)
+const stats = ref(statsJson.items)
 const filterRegion = ref('')
 
 const props = defineProps({
   role: String
 })
-
-const {
-  filterCurator,
-  filterDoctor,
-  sortOrder,
-  uniqueCurators,
-  uniqueDoctors,
-  sortedSales,
-  averageEfficiencyByDoctor,
-  averageEfficiencyByKurator,
-  toggleSortOrder,
-  sortOrderText
-} = useSalesFilter(sales)
-
-const uniqueRegions = computed(() => {
-  const regions = sales.value.map((sale) => ({ name: sale.region }))
-  return [...new Set(regions.map((region) => region.name))].map((name) => ({ name }))
-})
-
-const handleCuratorSelected = (item) => {
-  filterCurator.value = item
-}
-
-const handleDoctorSelected = (item) => {
-  filterDoctor.value = item
-}
-
-const handleRegionSelected = (item) => {
-  filterRegion.value = item
-}
 </script>
